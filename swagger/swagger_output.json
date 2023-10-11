@@ -1,0 +1,19 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "API do BoardTasks",
+    "description": "Documentação de API do BoardTasks"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000/",
+      "description": "Servidor localhost."
+    },
+    {
+      "url": "htpps://boardtasks-back.vercel.app/",
+      "description": "Servidor de produção."
+    }
+  ],
+  "paths": {}
+}
