@@ -10,7 +10,9 @@ on:
     branches:
       - main
 
-job1:
+jobs:
+
+  job1:
   name: CI - Build e criação de artefato
   runs-on: ubuntu-latest
   steps:
@@ -39,7 +41,7 @@ job1:
         retention-days: 1
         path: ./
 
-job2:
+ job2:
   name: CD - Deploy na vercel
   needs: job1
   runs-on: ubuntu-latest
