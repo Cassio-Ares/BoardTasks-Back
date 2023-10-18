@@ -5,13 +5,13 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const cors = require('cors');
+const cors = require('cors');  /**para não termos problema de conflito no front */
 const swaggerUi = require('swagger-ui-express');
-const swaggerOption = {custonCssUrl: '/swagger-ui.css'};
+const swaggerOption = {custonCssUrl: '/swagger-ui.css'}; /**protege para não ter conflito com a vercel em produção*/
 const routes = require('./src/routes');
 const authDocProducao = require('./src/middlewares/authDoc');
 const app = express();
-require('dotenv').config();
+require('dotenv').config();  /**arquivo de variavel de ambiente */
 
 
 /**
@@ -43,6 +43,7 @@ routes(app)
 
 /**
  * inicialização do servidor
+ * no express não no bin/www
  */
 if(process.env.NODE_ENV !== 'test'){
     const PORT = process.env.PORT || 4000;
