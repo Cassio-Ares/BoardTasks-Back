@@ -49,7 +49,7 @@ jobs:
 
   job2:
     name: CD - Deploy na vercel
-    needs: job1
+    needs: job1                      # precisa aguardar (neste caso precisa aguarda job1 para rodas)
     runs-on: ubuntu-latest
     steps:
       - name: Baixando Artefato do código buildado
@@ -66,7 +66,7 @@ jobs:
       - name: Instalando CLI da Vercel
         run: npm install --global vercel@latest
 
-      - name: Buscando informações do ambiente da Vercel
+      - name: Buscando informações do ambiente no Vercel
         run: vercel pull --yes --environment=production --token=${{secret.VERCEL_TOKEN}}
 
       - name: Buildando artefato do projeto
