@@ -43,7 +43,7 @@ jobs:
       - name: Criando artefato ZIP do código buildado
         uses: actions/upload-artifact@v3
         with:
-          name: artefato              #nome da pasta criada
+          name: artefatos              #nome da pasta criada
           retention-days: 1           # tempo que o arquivo vai durar
           path: ./
 
@@ -55,7 +55,7 @@ jobs:
       - name: Baixando Artefato do código buildado
         uses: actions/download-artifact@v3
         with:
-          name: artefato
+          name: artefatos
 
       - name: Instalando pacotes do npm
         run: npm install
@@ -69,8 +69,8 @@ jobs:
       - name: Buscando informações do ambiente no Vercel
         run: vercel pull --yes --environment=production --token=${{secrets.VERCEL_TOKEN}}
 
-      - name: Buildando artefato do projeto
+      - name: Buildando artefatos do projeto
         run: vercel build --prod --token=${{secrets.VERCEL_TOKEN}}
 
-      - name: Deploy de artefato do projeto na Vercel
-        run: vercel deploy --prebuild --prod --token=${{secrets.VERCEL_TOKEN}}
+      - name: Deploy de artefatos do projeto na Vercel
+        run: vercel deploy --prebuilt --prod --token=${{secrets.VERCEL_TOKEN}}
