@@ -25,7 +25,7 @@ let doc = {            /**configuração da doc do swagger*/
             description:"Servidor localhost."
         },
         {
-            url: "https://board-tasks-back-navy.vercel.app/",
+            url: "https://board-tasks-back-a1vogwwow-cassio-ares.vercel.app/",
             description: "Servidor de produção."
         }
     ],
