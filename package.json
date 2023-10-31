@@ -18,6 +18,6 @@
     "mongoose-to-swagger": "^1.5.1",
     "morgan": "~1.9.1",
     "swagger-autogen": "^2.23.6",
-    "swagger-ui-express": "^5.0.0"
+    "swagger-ui-express": "^4.6.3"
   }
 }
