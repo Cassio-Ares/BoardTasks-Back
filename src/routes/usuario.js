@@ -21,9 +21,12 @@ router.post('/criar', conectarBancoDados, async function(req, res) {
       resposta: respostaBD
     })
   
- } catch (error) {
-     return tratarErrosEsperados(res, error)
- }
+ }catch (error) {
+  if(String(error).includes("email_1 dup key")){
+    return tratarErrosEsperados(res, "Error: Já existe uma conta com esse e-mail!");
+  }
+  return tratarErrosEsperados(res, error);
+}
 });
 
 module.exports = router;
