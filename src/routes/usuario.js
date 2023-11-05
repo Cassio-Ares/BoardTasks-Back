@@ -1,9 +1,9 @@
 const express = require('express');
-const tratarErrosEsperados = require('../functions/tratarErrosEsperados');
-const conectarBancoDados = require('../middlewares/conectarBD');
+const tratarErrosEsperados = require('../functions/tratarErrosEsperados.js');
+const conectarBancoDados = require('../middleware/conectarBD.js');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
-const EsquemaUsuario = require('../models/usuario');
+const EsquemaUsuario = require('../models/usuario.js');
 const router = express.Router();
 
 

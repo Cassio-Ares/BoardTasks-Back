@@ -3,8 +3,10 @@
  * nos tiramos isso do index.js e trazemos para cá
  */
 
-function routes(app){
+
+function routes(app) {
     app.use('/usuario', require('./routes/usuario.js'));
+    app.use('/tarefas', require('./routes/tarefas.js'));
     return;
 }
 
