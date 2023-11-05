@@ -1,26 +1,26 @@
-const  mongoose  = require("mongoose");
+const mongoose = require('mongoose');
 const validator = require('validator');
 
 const esquema = new mongoose.Schema(
     {
         nome: {
             type: String,
-            required: "é obrigatorio!",
+            required: 'é obrigatório!',
         },
-        email:{
+        email: {
             type: String,
             unique: true,
-            required: 'é obrigatorio!',
+            required: 'é obrigatório!',
             lowercase: true,
             index: true,
-            validate:{
-                validator:(valorDigitado) =>{return validator.isEmail(valorDigitado)},
+            validate: {
+                validator: (valorDigitado) => { return validator.isEmail(valorDigitado) },
                 message: 'inválido!'
             }
         },
-        senha:{
+        senha: {
             type: String,
-            required: 'é obrigatorio!',
+            required: 'é obrigatório!',
             select: false,
         },
     },
@@ -31,4 +31,3 @@ const esquema = new mongoose.Schema(
 
 const EsquemaUsuario = mongoose.models.Usuario || mongoose.model('Usuario', esquema);
 module.exports = EsquemaUsuario;
-
