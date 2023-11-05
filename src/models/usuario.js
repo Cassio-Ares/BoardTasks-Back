@@ -12,6 +12,7 @@ const esquema = new mongoose.Schema(
             unique: true,
             required: 'é obrigatorio!',
             lowercase: true,
+            index: true,
             validate:{
                 validator:(valorDigitado) =>{return validator.isEmail(valorDigitado)},
                 message: 'inválido!'
