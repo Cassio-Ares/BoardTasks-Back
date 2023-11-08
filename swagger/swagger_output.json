@@ -182,6 +182,28 @@
           }
         }
       }
+    },
+    "/tarefas/obter/usuario": {
+      "get": {
+        "tags": [
+          "Tarefa"
+        ],
+        "description": "Endpoint para obter todas tarefas do usuario logado.",
+        "parameters": [
+          {
+            "name": "x-auth-token",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
