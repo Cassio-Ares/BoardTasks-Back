@@ -23,3 +23,5 @@ router.post('/criar', authUser, conectarBancoDados, async function (req, res) {
     return tratarErrosEsperados(res, error);
   }
 });
+
+module.exports = router;
