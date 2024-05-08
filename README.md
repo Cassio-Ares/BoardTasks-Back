@@ -1,21 +1,85 @@
-# BoardTasks-Back 
-Projeto em Express.js do BoardTasks feito para curso DNC
+# BoardTasks-Back
 
--------------------------------------------------------------------------
+Projeto em Express.js do BoardTasks desenvolvido para o curso DNC.
 
-## Começe por aqui:
-Antes de tudo você precisa ter certeza que baixou todas as dependências antes de executar este projeto.
+## Pré-requisitos
 
-### Dependências 
-- NodeJs
-- NPM
+Antes de iniciar, certifique-se de ter instalado as seguintes dependências:
 
--------------------------------------------------------------------------
+- Node.js
+- npm (geralmente vem junto com o Node.js)
 
-## Executando o projeto:
+## Executando o Projeto
 
-1) Primeiro você precisa colocar este repositório em seu computador.
-2) Você precisa copiar o arquivo `EXEMPLO.env` que está no pasta raiz daquele projeto e renomeá-lo para .env parq eu as variáveis de ambiente sejam definidas.
-3) Depois é só executar o comando `npm instal` no terminal na pasta raiz do projeto.
-4) Em seguida, você pode executar o comando `npm run dev` no terminal na pasta raiz do projeto, para iniciar o servidor back-end.
-5) Depois entre na documentação da API é só acessar seu navegador o endereço `html://localhost:4000/`
+Siga as etapas abaixo para configurar e executar o projeto em seu ambiente local:
+
+1. Clone este repositório para o seu computador:
+
+git clone https://github.com/Cassio-Ares/BoardTasks-Back.git
+
+
+2. Redefina as variaveis  no  arquivo `.env`.
+
+3. Instale as dependências do projeto executando o seguinte comando no terminal, na pasta raiz do projeto:
+
+npm install
+
+
+4. Inicie o servidor back-end executando o comando:
+
+npm run dev
+
+
+5. Após iniciar o servidor, você pode acessar a documentação da API no navegador através do endereço:
+
+
+Claro, aqui está a versão com Markdown:
+
+markdown
+Copy code
+# BoardTasks-Back
+
+Projeto em Express.js do BoardTasks desenvolvido para o curso DNC.
+
+## Pré-requisitos
+
+Antes de iniciar, certifique-se de ter instalado as seguintes dependências:
+
+- Node.js
+- npm (geralmente vem junto com o Node.js)
+
+## Executando o Projeto
+
+Siga as etapas abaixo para configurar e executar o projeto em seu ambiente local:
+
+1. Clone este repositório para o seu computador:
+
+git clone https://github.com/Cassio-Ares/BoardTasks-Back.git
+
+javascript
+Copy code
+
+2. Renomeie o arquivo `EXEMPLO.env` na pasta raiz do projeto para `.env` para que as variáveis de ambiente sejam definidas corretamente.
+
+3. Instale as dependências do projeto executando o seguinte comando no terminal, na pasta raiz do projeto:
+
+npm install
+
+arduino
+Copy code
+
+4. Inicie o servidor back-end executando o comando:
+
+npm run dev
+
+perl
+Copy code
+
+5. Após iniciar o servidor, você pode acessar a documentação da API no navegador através do endereço:
+
+http://localhost:4000/doc/
+
+
+## Documentação da API
+
+A documentação da API está disponível [aqui](https://board-tasks-back-navy.vercel.app/doc/), criada utilizando o Swagger.
