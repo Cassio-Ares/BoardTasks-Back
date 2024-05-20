@@ -2,6 +2,8 @@
 
 Projeto em Express.js do BoardTasks desenvolvido para o curso DNC.
 
+ **Acesso a documentação da API**: [Documentação da API ](https://board-tasks-back-navy.vercel.app/doc/)
+
 ## Pré-requisitos
 
 Antes de iniciar, certifique-se de ter instalado as seguintes dependências:
